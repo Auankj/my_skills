@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R.J's Portfolio</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    span{
+      color: #b74b4b;
+  }
+    .typing-text{
+      font-size: 34px;
+      font-weight: 600;
+      min-width: 280px;
+  }
+  
+  .typing-text span{
+      position: relative;
+  }
+  
+  .typing-text span::before{
+      content: "software Developer";
+      color: #b74b4b;
+      animation: words 20s infinite;
+  }
+  
+  .typing-text span::after{
+      content: "";
+      background-color: black;
+      position: absolute;
+      width: calc(100% + 8px);
+      height: 100%;
+      border-left: 3px solid black;
+      right: -8;
+      animation: cursor 0.6s infinite;
+  }
+  
+  @keyframes cursor{
+      to{
+          border-left: 3px solid #b74b4b;
+      }
+  }
+  
+  @keyframes words{
+      0%, 20%{
+          content: "Web Developer";
+      }
+      21%, 40%{
+          content: "Developer";
+      }
+      41%, 60%{
+          content: "Web Designer";
+      }
+      61%, 80%{
+          content: "Roboticists";
+      }
+      81%, 100%{
+          content: "Book Writer";
+      }
+  }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .skill {
+      padding: 1rem 2rem;
+      border: 2px solid rgb(118, 39, 39);
+      border-radius: 5px;
+      background-color: #222;
+      color: #ff5050;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .skill:hover {
+      background-color: #ff5050;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hi, It's <span>Raunak</span></h1>
+    <h3 class="typing-text">I'm a <span></span></h3>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">C</div>
+      <div class="skill">C++</div>
+      <div class="skill"> Azure</div>
+      <div class="skill">Python</div>
+      <div class="skill">Arduino</div>
+    </div>
+  </div>
+</body>
+</html>
