@@ -109,9 +109,27 @@
       background-color: #ff5050;
       color: #222;
     }
+
+    .back-btn {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background-color: #222;
+      color: #ff5050;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .back-btn:hover {
+      background-color: #ff5050;
+      color: #222;
+    }
   </style>
 </head>
 <body>
+  <button class="back-btn">Back</button>
   <div class="container">
     <h1>Hi, It's <span>Raunak</span></h1>
     <h3 class="typing-text">I'm a <span></span></h3>
@@ -120,10 +138,18 @@
       <div class="skill">CSS</div>
       <div class="skill">C</div>
       <div class="skill">C++</div>
-      <div class="skill"> Azure</div>
-      <div class="skill">Python</div>
-      <div class="skill">Arduino</div>
+      <div class="skill">AZURE</div>
+      <div class="skill">PYTHON</div>
+      <div class="skill">ARDUINO</div>
     </div>
   </div>
+  <script>
+    const backBtn = document.querySelector('.back-btn');
+    backBtn.addEventListener('click', () => {
+      // Add your back button functionality here
+      // For example, you can go back to the previous page
+      window.history.back();
+    });
+  </script>
 </body>
 </html>
